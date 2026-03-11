@@ -1,0 +1,15 @@
+flowchart LR
+  U[Client Browser] --> W[Web App\nReact + Vite]
+  W --> A[API Aggregator\nFastify]
+  S[Telemetry Simulator\nOTel SDK] --> A
+  S --> O[OTel Collector]
+  O --> T[Tempo]
+  O --> P[Prometheus]
+  S --> Lf[/simulator.log/]
+  Lf --> Pr[Promtail]
+  Pr --> L[Loki]
+  G[Grafana] --> P
+  G --> L
+  G --> T
+  A --> R[(In-memory Correlation Store)]
+  R --> W

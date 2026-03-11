@@ -1,0 +1,126 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: occ-api
+    environment:
+      API_PORT: 8080
+      API_HOST: 0.0.0.0
+      LOG_LEVEL: info
+    ports:
+      - "8080:8080"
+    volumes:
+      - occ-logs:/var/log/occ
+    restart: unless-stopped
+
+  simulator:
+    build:
+      context: .
+      dockerfile: apps/simulator/Dockerfile
+    container_name: occ-simulator
+    environment:
+      API_URL: http://api:8080
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4318
+      LOG_FILE: /var/log/occ/simulator.log
+      SIM_TICK_MS: 1000
+    depends_on:
+      - api
+      - otel-collector
+    volumes:
+      - occ-logs:/var/log/occ
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: occ-web
+    depends_on:
+      - api
+    ports:
+      - "4173:4173"
+    restart: unless-stopped
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.116.1
+    container_name: occ-otel-collector
+    command:
+      - "--config=/etc/otelcol-contrib/config.yaml"
+    volumes:
+      - ./infra/otel-collector/config.yaml:/etc/otelcol-contrib/config.yaml:ro
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+      - "9464:9464"
+    depends_on:
+      - tempo
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    container_name: occ-prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    volumes:
+      - ./infra/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+    depends_on:
+      - otel-collector
+    restart: unless-stopped
+
+  loki:
+    image: grafana/loki:3.2.1
+    container_name: occ-loki
+    command:
+      - "-config.file=/etc/loki/local-config.yaml"
+    volumes:
+      - ./infra/loki/config.yml:/etc/loki/local-config.yaml:ro
+    ports:
+      - "3100:3100"
+    restart: unless-stopped
+
+  promtail:
+    image: grafana/promtail:3.2.1
+    container_name: occ-promtail
+    command:
+      - "-config.file=/etc/promtail/config.yml"
+    volumes:
+      - ./infra/promtail/config.yml:/etc/promtail/config.yml:ro
+      - occ-logs:/var/log/occ
+    depends_on:
+      - loki
+    restart: unless-stopped
+
+  tempo:
+    image: grafana/tempo:2.6.1
+    container_name: occ-tempo
+    command:
+      - "-config.file=/etc/tempo/tempo.yml"
+    volumes:
+      - ./infra/tempo/tempo.yml:/etc/tempo/tempo.yml:ro
+    ports:
+      - "3200:3200"
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.3.1
+    container_name: occ-grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - ./infra/grafana/provisioning/datasources/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml:ro
+      - ./infra/grafana/provisioning/dashboards/dashboard.yml:/etc/grafana/provisioning/dashboards/dashboard.yml:ro
+      - ./infra/grafana/provisioning/dashboards/occ-overview.json:/var/lib/grafana/dashboards/occ-overview.json:ro
+    depends_on:
+      - prometheus
+      - loki
+      - tempo
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+volumes:
+  occ-logs:

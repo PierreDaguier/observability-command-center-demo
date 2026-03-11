@@ -1,0 +1,2988 @@
+{
+  "generatedAt": "2026-03-11T01:58:50.356Z",
+  "services": [
+    {
+      "id": "api-gateway",
+      "domain": "Edge",
+      "tier": "critical",
+      "latencyP95Ms": 142,
+      "availability": 99.94,
+      "errorRatePct": 0.38,
+      "throughputRps": 1480,
+      "saturationPct": 42,
+      "errorBudgetRemainingPct": 88,
+      "status": "healthy",
+      "latest": {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 136.89,
+        "errorRatePct": 0.28,
+        "throughputRps": 1511.69,
+        "saturationPct": 39.7,
+        "errorBudgetRemainingPct": 88.35
+      }
+    },
+    {
+      "id": "checkout-api",
+      "domain": "Commerce",
+      "tier": "critical",
+      "latencyP95Ms": 210,
+      "availability": 99.91,
+      "errorRatePct": 0.62,
+      "throughputRps": 780,
+      "saturationPct": 48,
+      "errorBudgetRemainingPct": 84,
+      "status": "healthy",
+      "latest": {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 223.5,
+        "errorRatePct": 0.43,
+        "throughputRps": 826.23,
+        "saturationPct": 46.91,
+        "errorBudgetRemainingPct": 83.99
+      }
+    },
+    {
+      "id": "payments-api",
+      "domain": "Commerce",
+      "tier": "critical",
+      "latencyP95Ms": 186,
+      "availability": 99.96,
+      "errorRatePct": 0.44,
+      "throughputRps": 520,
+      "saturationPct": 37,
+      "errorBudgetRemainingPct": 90,
+      "status": "healthy",
+      "latest": {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 179.02,
+        "errorRatePct": 0.48,
+        "throughputRps": 537.41,
+        "saturationPct": 40.11,
+        "errorBudgetRemainingPct": 90.3
+      }
+    },
+    {
+      "id": "auth-service",
+      "domain": "Platform",
+      "tier": "critical",
+      "latencyP95Ms": 124,
+      "availability": 99.98,
+      "errorRatePct": 0.21,
+      "throughputRps": 940,
+      "saturationPct": 34,
+      "errorBudgetRemainingPct": 93,
+      "status": "healthy",
+      "latest": {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 114.47,
+        "errorRatePct": 0.24,
+        "throughputRps": 889.27,
+        "saturationPct": 35.19,
+        "errorBudgetRemainingPct": 92.82
+      }
+    },
+    {
+      "id": "inventory-service",
+      "domain": "Commerce",
+      "tier": "high",
+      "latencyP95Ms": 162,
+      "availability": 99.93,
+      "errorRatePct": 0.31,
+      "throughputRps": 440,
+      "saturationPct": 29,
+      "errorBudgetRemainingPct": 91,
+      "status": "healthy",
+      "latest": {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 146.82,
+        "errorRatePct": 0.17,
+        "throughputRps": 432.42,
+        "saturationPct": 27.23,
+        "errorBudgetRemainingPct": 91.33
+      }
+    },
+    {
+      "id": "billing-worker",
+      "domain": "Finance",
+      "tier": "high",
+      "latencyP95Ms": 240,
+      "availability": 99.88,
+      "errorRatePct": 0.72,
+      "throughputRps": 180,
+      "saturationPct": 57,
+      "errorBudgetRemainingPct": 76,
+      "status": "healthy",
+      "latest": {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 226.79,
+        "errorRatePct": 0.53,
+        "throughputRps": 186.62,
+        "saturationPct": 56.05,
+        "errorBudgetRemainingPct": 76.05
+      }
+    }
+  ],
+  "timeseries": {
+    "api-gateway": [
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 131.81,
+        "errorRatePct": 0.18,
+        "throughputRps": 1468.42,
+        "saturationPct": 43.97,
+        "errorBudgetRemainingPct": 87.96
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 131.37,
+        "errorRatePct": 0.51,
+        "throughputRps": 1587.35,
+        "saturationPct": 45.22,
+        "errorBudgetRemainingPct": 87.89
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 144.44,
+        "errorRatePct": 0.5,
+        "throughputRps": 1568.43,
+        "saturationPct": 40.11,
+        "errorBudgetRemainingPct": 88.25
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 153.27,
+        "errorRatePct": 0.38,
+        "throughputRps": 1451.18,
+        "saturationPct": 42.61,
+        "errorBudgetRemainingPct": 88.26
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 137.17,
+        "errorRatePct": 0.42,
+        "throughputRps": 1457.55,
+        "saturationPct": 39.9,
+        "errorBudgetRemainingPct": 87.92
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 126.58,
+        "errorRatePct": 0.22,
+        "throughputRps": 1521.31,
+        "saturationPct": 41.06,
+        "errorBudgetRemainingPct": 87.55
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 138.86,
+        "errorRatePct": 0.56,
+        "throughputRps": 1589.17,
+        "saturationPct": 38.58,
+        "errorBudgetRemainingPct": 87.92
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 129.79,
+        "errorRatePct": 0.21,
+        "throughputRps": 1426.32,
+        "saturationPct": 46.33,
+        "errorBudgetRemainingPct": 88.39
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 135.44,
+        "errorRatePct": 0.46,
+        "throughputRps": 1467.23,
+        "saturationPct": 42.51,
+        "errorBudgetRemainingPct": 87.99
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 127.82,
+        "errorRatePct": 0.3,
+        "throughputRps": 1419.98,
+        "saturationPct": 37.92,
+        "errorBudgetRemainingPct": 88.07
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 142.35,
+        "errorRatePct": 0.42,
+        "throughputRps": 1450.45,
+        "saturationPct": 42.92,
+        "errorBudgetRemainingPct": 88.25
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 148.63,
+        "errorRatePct": 0.61,
+        "throughputRps": 1451.19,
+        "saturationPct": 40.63,
+        "errorBudgetRemainingPct": 88.19
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 156.63,
+        "errorRatePct": 0.61,
+        "throughputRps": 1390.35,
+        "saturationPct": 43.93,
+        "errorBudgetRemainingPct": 88.31
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 147.47,
+        "errorRatePct": 0.3,
+        "throughputRps": 1415.95,
+        "saturationPct": 44.44,
+        "errorBudgetRemainingPct": 87.56
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 136.43,
+        "errorRatePct": 0.56,
+        "throughputRps": 1453.3,
+        "saturationPct": 44.95,
+        "errorBudgetRemainingPct": 87.57
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 141.51,
+        "errorRatePct": 0.46,
+        "throughputRps": 1429.61,
+        "saturationPct": 42.33,
+        "errorBudgetRemainingPct": 88.39
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 154.21,
+        "errorRatePct": 0.46,
+        "throughputRps": 1508.77,
+        "saturationPct": 43.35,
+        "errorBudgetRemainingPct": 88.42
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 139.54,
+        "errorRatePct": 0.59,
+        "throughputRps": 1363.36,
+        "saturationPct": 43.53,
+        "errorBudgetRemainingPct": 88.27
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 148.23,
+        "errorRatePct": 0.48,
+        "throughputRps": 1448.09,
+        "saturationPct": 41.41,
+        "errorBudgetRemainingPct": 88.42
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 141.72,
+        "errorRatePct": 0.4,
+        "throughputRps": 1487.56,
+        "saturationPct": 40.64,
+        "errorBudgetRemainingPct": 88.11
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 137.94,
+        "errorRatePct": 0.36,
+        "throughputRps": 1442.11,
+        "saturationPct": 39.42,
+        "errorBudgetRemainingPct": 88
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 155.7,
+        "errorRatePct": 0.5,
+        "throughputRps": 1522.48,
+        "saturationPct": 40.77,
+        "errorBudgetRemainingPct": 87.78
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 130.27,
+        "errorRatePct": 0.52,
+        "throughputRps": 1482.64,
+        "saturationPct": 46.11,
+        "errorBudgetRemainingPct": 87.67
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 142.81,
+        "errorRatePct": 0.59,
+        "throughputRps": 1524.69,
+        "saturationPct": 45.01,
+        "errorBudgetRemainingPct": 87.52
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 131.71,
+        "errorRatePct": 0.52,
+        "throughputRps": 1438.38,
+        "saturationPct": 41.64,
+        "errorBudgetRemainingPct": 87.66
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 155.25,
+        "errorRatePct": 0.42,
+        "throughputRps": 1384.02,
+        "saturationPct": 44.6,
+        "errorBudgetRemainingPct": 88.46
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 129.9,
+        "errorRatePct": 0.17,
+        "throughputRps": 1496.25,
+        "saturationPct": 42.02,
+        "errorBudgetRemainingPct": 87.64
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 136.91,
+        "errorRatePct": 0.49,
+        "throughputRps": 1368.72,
+        "saturationPct": 38.85,
+        "errorBudgetRemainingPct": 87.86
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 131.37,
+        "errorRatePct": 0.6,
+        "throughputRps": 1508.4,
+        "saturationPct": 45.42,
+        "errorBudgetRemainingPct": 87.59
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 129.96,
+        "errorRatePct": 0.26,
+        "throughputRps": 1587.25,
+        "saturationPct": 44.04,
+        "errorBudgetRemainingPct": 87.54
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 137.45,
+        "errorRatePct": 0.26,
+        "throughputRps": 1417.65,
+        "saturationPct": 46.11,
+        "errorBudgetRemainingPct": 87.83
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 131.07,
+        "errorRatePct": 0.27,
+        "throughputRps": 1455.45,
+        "saturationPct": 44.34,
+        "errorBudgetRemainingPct": 87.75
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 154.79,
+        "errorRatePct": 0.38,
+        "throughputRps": 1416.01,
+        "saturationPct": 42.65,
+        "errorBudgetRemainingPct": 87.59
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 141.52,
+        "errorRatePct": 0.39,
+        "throughputRps": 1568.25,
+        "saturationPct": 45.44,
+        "errorBudgetRemainingPct": 88.23
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 129.13,
+        "errorRatePct": 0.26,
+        "throughputRps": 1399.48,
+        "saturationPct": 39.15,
+        "errorBudgetRemainingPct": 88.24
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 127.98,
+        "errorRatePct": 0.26,
+        "throughputRps": 1521.44,
+        "saturationPct": 45.4,
+        "errorBudgetRemainingPct": 88.17
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 131.23,
+        "errorRatePct": 0.38,
+        "throughputRps": 1464.07,
+        "saturationPct": 45.29,
+        "errorBudgetRemainingPct": 87.62
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 135.64,
+        "errorRatePct": 0.38,
+        "throughputRps": 1463.61,
+        "saturationPct": 44.7,
+        "errorBudgetRemainingPct": 87.68
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 138.92,
+        "errorRatePct": 0.5,
+        "throughputRps": 1396.71,
+        "saturationPct": 45.47,
+        "errorBudgetRemainingPct": 88.49
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 127.6,
+        "errorRatePct": 0.49,
+        "throughputRps": 1594.75,
+        "saturationPct": 39.51,
+        "errorBudgetRemainingPct": 88.07
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 148.89,
+        "errorRatePct": 0.14,
+        "throughputRps": 1512.28,
+        "saturationPct": 37.63,
+        "errorBudgetRemainingPct": 88.42
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 127.33,
+        "errorRatePct": 0.55,
+        "throughputRps": 1505.73,
+        "saturationPct": 39.71,
+        "errorBudgetRemainingPct": 87.6
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 153.91,
+        "errorRatePct": 0.5,
+        "throughputRps": 1452.73,
+        "saturationPct": 43.16,
+        "errorBudgetRemainingPct": 87.63
+      },
+      {
+        "service": "api-gateway",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 136.89,
+        "errorRatePct": 0.28,
+        "throughputRps": 1511.69,
+        "saturationPct": 39.7,
+        "errorBudgetRemainingPct": 88.35
+      }
+    ],
+    "checkout-api": [
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 199.82,
+        "errorRatePct": 0.4,
+        "throughputRps": 814.05,
+        "saturationPct": 45.99,
+        "errorBudgetRemainingPct": 83.9
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 209.97,
+        "errorRatePct": 0.67,
+        "throughputRps": 813.99,
+        "saturationPct": 44.33,
+        "errorBudgetRemainingPct": 84.26
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 202.44,
+        "errorRatePct": 0.67,
+        "throughputRps": 749.57,
+        "saturationPct": 48.69,
+        "errorBudgetRemainingPct": 84.35
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 218.53,
+        "errorRatePct": 0.81,
+        "throughputRps": 815.29,
+        "saturationPct": 44.93,
+        "errorBudgetRemainingPct": 83.74
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 202.34,
+        "errorRatePct": 0.47,
+        "throughputRps": 766.65,
+        "saturationPct": 43.75,
+        "errorBudgetRemainingPct": 83.57
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 211.41,
+        "errorRatePct": 0.57,
+        "throughputRps": 804.05,
+        "saturationPct": 46.67,
+        "errorBudgetRemainingPct": 83.63
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 220.95,
+        "errorRatePct": 0.55,
+        "throughputRps": 772.72,
+        "saturationPct": 44.42,
+        "errorBudgetRemainingPct": 84.04
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 220.76,
+        "errorRatePct": 0.44,
+        "throughputRps": 770.1,
+        "saturationPct": 45.54,
+        "errorBudgetRemainingPct": 83.88
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 196.5,
+        "errorRatePct": 0.81,
+        "throughputRps": 760.15,
+        "saturationPct": 51.02,
+        "errorBudgetRemainingPct": 84.37
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 198.7,
+        "errorRatePct": 0.7,
+        "throughputRps": 759.68,
+        "saturationPct": 49.63,
+        "errorBudgetRemainingPct": 83.55
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 200.15,
+        "errorRatePct": 0.86,
+        "throughputRps": 749.06,
+        "saturationPct": 49.51,
+        "errorBudgetRemainingPct": 83.52
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 202.79,
+        "errorRatePct": 0.87,
+        "throughputRps": 779.19,
+        "saturationPct": 50.48,
+        "errorBudgetRemainingPct": 83.71
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 196.09,
+        "errorRatePct": 0.76,
+        "throughputRps": 753.52,
+        "saturationPct": 46.45,
+        "errorBudgetRemainingPct": 83.91
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 210.18,
+        "errorRatePct": 0.5,
+        "throughputRps": 820.55,
+        "saturationPct": 45.47,
+        "errorBudgetRemainingPct": 84.03
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 222.9,
+        "errorRatePct": 0.79,
+        "throughputRps": 740.82,
+        "saturationPct": 45.14,
+        "errorBudgetRemainingPct": 83.9
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 213.76,
+        "errorRatePct": 0.48,
+        "throughputRps": 783.18,
+        "saturationPct": 46.26,
+        "errorBudgetRemainingPct": 84.39
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 218.14,
+        "errorRatePct": 0.5,
+        "throughputRps": 825.86,
+        "saturationPct": 51.34,
+        "errorBudgetRemainingPct": 83.7
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 194.56,
+        "errorRatePct": 0.77,
+        "throughputRps": 826.5,
+        "saturationPct": 50.62,
+        "errorBudgetRemainingPct": 83.7
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 194.85,
+        "errorRatePct": 0.41,
+        "throughputRps": 841.01,
+        "saturationPct": 45.3,
+        "errorBudgetRemainingPct": 84.04
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 197.04,
+        "errorRatePct": 0.76,
+        "throughputRps": 718.75,
+        "saturationPct": 49.76,
+        "errorBudgetRemainingPct": 83.53
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.85,
+        "latencyP95Ms": 215.85,
+        "errorRatePct": 0.72,
+        "throughputRps": 720.3,
+        "saturationPct": 44.72,
+        "errorBudgetRemainingPct": 83.51
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 207.13,
+        "errorRatePct": 0.71,
+        "throughputRps": 743.39,
+        "saturationPct": 49.23,
+        "errorBudgetRemainingPct": 84.25
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 202.04,
+        "errorRatePct": 0.61,
+        "throughputRps": 740.98,
+        "saturationPct": 45.07,
+        "errorBudgetRemainingPct": 83.93
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 225.59,
+        "errorRatePct": 0.39,
+        "throughputRps": 817.33,
+        "saturationPct": 48.1,
+        "errorBudgetRemainingPct": 84.08
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 200.43,
+        "errorRatePct": 0.67,
+        "throughputRps": 804.24,
+        "saturationPct": 51.62,
+        "errorBudgetRemainingPct": 83.85
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 213.7,
+        "errorRatePct": 0.73,
+        "throughputRps": 764.23,
+        "saturationPct": 50.24,
+        "errorBudgetRemainingPct": 84.19
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.85,
+        "latencyP95Ms": 194.29,
+        "errorRatePct": 0.63,
+        "throughputRps": 798.82,
+        "saturationPct": 48.16,
+        "errorBudgetRemainingPct": 83.81
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 219.77,
+        "errorRatePct": 0.64,
+        "throughputRps": 740.77,
+        "saturationPct": 49.3,
+        "errorBudgetRemainingPct": 83.8
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 220.66,
+        "errorRatePct": 0.44,
+        "throughputRps": 838.3,
+        "saturationPct": 51.28,
+        "errorBudgetRemainingPct": 84.25
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.84,
+        "latencyP95Ms": 221.59,
+        "errorRatePct": 0.8,
+        "throughputRps": 758.19,
+        "saturationPct": 45.39,
+        "errorBudgetRemainingPct": 84.17
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 206.37,
+        "errorRatePct": 0.63,
+        "throughputRps": 738.31,
+        "saturationPct": 48.15,
+        "errorBudgetRemainingPct": 84.01
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 211.66,
+        "errorRatePct": 0.46,
+        "throughputRps": 789.57,
+        "saturationPct": 49.79,
+        "errorBudgetRemainingPct": 84.39
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 194.56,
+        "errorRatePct": 0.67,
+        "throughputRps": 818.53,
+        "saturationPct": 51.29,
+        "errorBudgetRemainingPct": 83.99
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 215.13,
+        "errorRatePct": 0.75,
+        "throughputRps": 744.07,
+        "saturationPct": 46.89,
+        "errorBudgetRemainingPct": 84.39
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 215.9,
+        "errorRatePct": 0.73,
+        "throughputRps": 754.96,
+        "saturationPct": 50.66,
+        "errorBudgetRemainingPct": 83.76
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 213.75,
+        "errorRatePct": 0.5,
+        "throughputRps": 723.81,
+        "saturationPct": 51.82,
+        "errorBudgetRemainingPct": 84.49
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 215.81,
+        "errorRatePct": 0.53,
+        "throughputRps": 733.34,
+        "saturationPct": 52.3,
+        "errorBudgetRemainingPct": 84.31
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 225.48,
+        "errorRatePct": 0.69,
+        "throughputRps": 827.88,
+        "saturationPct": 50.67,
+        "errorBudgetRemainingPct": 84.13
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 206.93,
+        "errorRatePct": 0.42,
+        "throughputRps": 779.24,
+        "saturationPct": 45.64,
+        "errorBudgetRemainingPct": 83.62
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 221.38,
+        "errorRatePct": 0.72,
+        "throughputRps": 828.83,
+        "saturationPct": 51.59,
+        "errorBudgetRemainingPct": 83.63
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 208.86,
+        "errorRatePct": 0.76,
+        "throughputRps": 812.55,
+        "saturationPct": 45.46,
+        "errorBudgetRemainingPct": 84.39
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 208.35,
+        "errorRatePct": 0.69,
+        "throughputRps": 783.9,
+        "saturationPct": 47.77,
+        "errorBudgetRemainingPct": 84.36
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 209.38,
+        "errorRatePct": 0.82,
+        "throughputRps": 767.77,
+        "saturationPct": 50.04,
+        "errorBudgetRemainingPct": 83.91
+      },
+      {
+        "service": "checkout-api",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 223.5,
+        "errorRatePct": 0.43,
+        "throughputRps": 826.23,
+        "saturationPct": 46.91,
+        "errorBudgetRemainingPct": 83.99
+      }
+    ],
+    "payments-api": [
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 175.58,
+        "errorRatePct": 0.47,
+        "throughputRps": 492.5,
+        "saturationPct": 37.4,
+        "errorBudgetRemainingPct": 89.61
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 190.45,
+        "errorRatePct": 0.2,
+        "throughputRps": 512.51,
+        "saturationPct": 39.64,
+        "errorBudgetRemainingPct": 90.34
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 172.62,
+        "errorRatePct": 0.34,
+        "throughputRps": 479.92,
+        "saturationPct": 40.49,
+        "errorBudgetRemainingPct": 89.7
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 196.97,
+        "errorRatePct": 0.5,
+        "throughputRps": 510.95,
+        "saturationPct": 38.44,
+        "errorBudgetRemainingPct": 90.24
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 170.53,
+        "errorRatePct": 0.59,
+        "throughputRps": 544.36,
+        "saturationPct": 37.68,
+        "errorBudgetRemainingPct": 89.61
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 193.69,
+        "errorRatePct": 0.33,
+        "throughputRps": 528.42,
+        "saturationPct": 39.49,
+        "errorBudgetRemainingPct": 89.55
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 197.65,
+        "errorRatePct": 0.46,
+        "throughputRps": 518.07,
+        "saturationPct": 34.47,
+        "errorBudgetRemainingPct": 89.76
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 185.09,
+        "errorRatePct": 0.49,
+        "throughputRps": 510.26,
+        "saturationPct": 33.79,
+        "errorBudgetRemainingPct": 89.67
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 182.73,
+        "errorRatePct": 0.22,
+        "throughputRps": 536.65,
+        "saturationPct": 38.4,
+        "errorBudgetRemainingPct": 89.52
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 172.63,
+        "errorRatePct": 0.56,
+        "throughputRps": 554.91,
+        "saturationPct": 37.92,
+        "errorBudgetRemainingPct": 89.54
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 175.83,
+        "errorRatePct": 0.26,
+        "throughputRps": 507.89,
+        "saturationPct": 32.81,
+        "errorBudgetRemainingPct": 89.56
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 190.91,
+        "errorRatePct": 0.23,
+        "throughputRps": 489.4,
+        "saturationPct": 41.35,
+        "errorBudgetRemainingPct": 89.58
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 177.05,
+        "errorRatePct": 0.26,
+        "throughputRps": 482.97,
+        "saturationPct": 38.63,
+        "errorBudgetRemainingPct": 89.99
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 175.42,
+        "errorRatePct": 0.23,
+        "throughputRps": 486.72,
+        "saturationPct": 35.95,
+        "errorBudgetRemainingPct": 89.79
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 181.9,
+        "errorRatePct": 0.23,
+        "throughputRps": 559.32,
+        "saturationPct": 35.89,
+        "errorBudgetRemainingPct": 90.44
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 185.67,
+        "errorRatePct": 0.3,
+        "throughputRps": 550.27,
+        "saturationPct": 34.83,
+        "errorBudgetRemainingPct": 89.72
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 178.96,
+        "errorRatePct": 0.23,
+        "throughputRps": 555.94,
+        "saturationPct": 35.85,
+        "errorBudgetRemainingPct": 89.55
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 193.2,
+        "errorRatePct": 0.66,
+        "throughputRps": 500.96,
+        "saturationPct": 38.11,
+        "errorBudgetRemainingPct": 89.59
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 200.7,
+        "errorRatePct": 0.56,
+        "throughputRps": 526.8,
+        "saturationPct": 40.13,
+        "errorBudgetRemainingPct": 89.6
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 170.08,
+        "errorRatePct": 0.26,
+        "throughputRps": 522.48,
+        "saturationPct": 35.42,
+        "errorBudgetRemainingPct": 89.61
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 198.75,
+        "errorRatePct": 0.4,
+        "throughputRps": 485.34,
+        "saturationPct": 38.46,
+        "errorBudgetRemainingPct": 89.75
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 181.03,
+        "errorRatePct": 0.66,
+        "throughputRps": 526.71,
+        "saturationPct": 37.82,
+        "errorBudgetRemainingPct": 90.32
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 171.05,
+        "errorRatePct": 0.28,
+        "throughputRps": 538.93,
+        "saturationPct": 35.18,
+        "errorBudgetRemainingPct": 89.8
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 175.97,
+        "errorRatePct": 0.54,
+        "throughputRps": 491.89,
+        "saturationPct": 41.23,
+        "errorBudgetRemainingPct": 90.08
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 194.25,
+        "errorRatePct": 0.26,
+        "throughputRps": 521.25,
+        "saturationPct": 40.91,
+        "errorBudgetRemainingPct": 90.04
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 175.06,
+        "errorRatePct": 0.24,
+        "throughputRps": 478.91,
+        "saturationPct": 39.41,
+        "errorBudgetRemainingPct": 89.79
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 192.06,
+        "errorRatePct": 0.29,
+        "throughputRps": 493.73,
+        "saturationPct": 35,
+        "errorBudgetRemainingPct": 90.19
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 177.37,
+        "errorRatePct": 0.66,
+        "throughputRps": 504.76,
+        "saturationPct": 33.42,
+        "errorBudgetRemainingPct": 90.2
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 182.82,
+        "errorRatePct": 0.26,
+        "throughputRps": 548.9,
+        "saturationPct": 36.08,
+        "errorBudgetRemainingPct": 90.29
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 172.41,
+        "errorRatePct": 0.48,
+        "throughputRps": 480.04,
+        "saturationPct": 39.28,
+        "errorBudgetRemainingPct": 90.01
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 199.68,
+        "errorRatePct": 0.42,
+        "throughputRps": 543.72,
+        "saturationPct": 34.74,
+        "errorBudgetRemainingPct": 89.87
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 172.01,
+        "errorRatePct": 0.65,
+        "throughputRps": 522.75,
+        "saturationPct": 40.13,
+        "errorBudgetRemainingPct": 89.84
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 194.16,
+        "errorRatePct": 0.5,
+        "throughputRps": 495.14,
+        "saturationPct": 35.98,
+        "errorBudgetRemainingPct": 89.58
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 197.29,
+        "errorRatePct": 0.51,
+        "throughputRps": 545.38,
+        "saturationPct": 37.13,
+        "errorBudgetRemainingPct": 90.02
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 192.3,
+        "errorRatePct": 0.64,
+        "throughputRps": 510.51,
+        "saturationPct": 32.87,
+        "errorBudgetRemainingPct": 89.64
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 192.29,
+        "errorRatePct": 0.39,
+        "throughputRps": 541.89,
+        "saturationPct": 33.92,
+        "errorBudgetRemainingPct": 89.97
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 183.06,
+        "errorRatePct": 0.32,
+        "throughputRps": 555.78,
+        "saturationPct": 33.07,
+        "errorBudgetRemainingPct": 89.65
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 197.64,
+        "errorRatePct": 0.53,
+        "throughputRps": 496.04,
+        "saturationPct": 36.02,
+        "errorBudgetRemainingPct": 90.09
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 201.57,
+        "errorRatePct": 0.49,
+        "throughputRps": 555.98,
+        "saturationPct": 35.57,
+        "errorBudgetRemainingPct": 90.45
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 180.53,
+        "errorRatePct": 0.22,
+        "throughputRps": 517.45,
+        "saturationPct": 36.78,
+        "errorBudgetRemainingPct": 89.62
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 179.59,
+        "errorRatePct": 0.24,
+        "throughputRps": 521.39,
+        "saturationPct": 36.63,
+        "errorBudgetRemainingPct": 90.1
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 196.05,
+        "errorRatePct": 0.43,
+        "throughputRps": 548.08,
+        "saturationPct": 37.75,
+        "errorBudgetRemainingPct": 90.44
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 182.6,
+        "errorRatePct": 0.47,
+        "throughputRps": 538.75,
+        "saturationPct": 35.34,
+        "errorBudgetRemainingPct": 89.9
+      },
+      {
+        "service": "payments-api",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 179.02,
+        "errorRatePct": 0.48,
+        "throughputRps": 537.41,
+        "saturationPct": 40.11,
+        "errorBudgetRemainingPct": 90.3
+      }
+    ],
+    "auth-service": [
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 121.28,
+        "errorRatePct": 0.09,
+        "throughputRps": 932.95,
+        "saturationPct": 30.69,
+        "errorBudgetRemainingPct": 93.09
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 130.02,
+        "errorRatePct": 0.14,
+        "throughputRps": 991.53,
+        "saturationPct": 34.88,
+        "errorBudgetRemainingPct": 93.04
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 116.59,
+        "errorRatePct": 0.15,
+        "throughputRps": 953.85,
+        "saturationPct": 35.8,
+        "errorBudgetRemainingPct": 92.54
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 121.66,
+        "errorRatePct": 0.37,
+        "throughputRps": 877.42,
+        "saturationPct": 36.78,
+        "errorBudgetRemainingPct": 92.72
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 135.73,
+        "errorRatePct": 0.02,
+        "throughputRps": 966.19,
+        "saturationPct": 30.54,
+        "errorBudgetRemainingPct": 92.55
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 125.94,
+        "errorRatePct": 0.39,
+        "throughputRps": 966.32,
+        "saturationPct": 37.59,
+        "errorBudgetRemainingPct": 93.49
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 129.67,
+        "errorRatePct": 0.4,
+        "throughputRps": 900.59,
+        "saturationPct": 34.77,
+        "errorBudgetRemainingPct": 93.27
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 120.57,
+        "errorRatePct": 0.02,
+        "throughputRps": 907.99,
+        "saturationPct": 37.28,
+        "errorBudgetRemainingPct": 92.51
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 122.55,
+        "errorRatePct": 0.02,
+        "throughputRps": 1004.76,
+        "saturationPct": 33.09,
+        "errorBudgetRemainingPct": 92.54
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 117.76,
+        "errorRatePct": 0.18,
+        "throughputRps": 995.96,
+        "saturationPct": 30.3,
+        "errorBudgetRemainingPct": 92.52
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 123.71,
+        "errorRatePct": 0.26,
+        "throughputRps": 1004.75,
+        "saturationPct": 36,
+        "errorBudgetRemainingPct": 93.02
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 111.5,
+        "errorRatePct": 0.04,
+        "throughputRps": 913.67,
+        "saturationPct": 30.21,
+        "errorBudgetRemainingPct": 92.96
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 129.32,
+        "errorRatePct": 0.25,
+        "throughputRps": 984.79,
+        "saturationPct": 32.14,
+        "errorBudgetRemainingPct": 93.01
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 129.2,
+        "errorRatePct": 0.15,
+        "throughputRps": 885.34,
+        "saturationPct": 37.47,
+        "errorBudgetRemainingPct": 92.61
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 117.15,
+        "errorRatePct": 0.02,
+        "throughputRps": 984.79,
+        "saturationPct": 30.62,
+        "errorBudgetRemainingPct": 93.23
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 109.46,
+        "errorRatePct": 0.09,
+        "throughputRps": 943.89,
+        "saturationPct": 36.91,
+        "errorBudgetRemainingPct": 93.39
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 121.59,
+        "errorRatePct": 0.25,
+        "throughputRps": 971.56,
+        "saturationPct": 38.22,
+        "errorBudgetRemainingPct": 92.93
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 111.07,
+        "errorRatePct": 0.16,
+        "throughputRps": 957.43,
+        "saturationPct": 31.74,
+        "errorBudgetRemainingPct": 92.6
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 110.36,
+        "errorRatePct": 0.03,
+        "throughputRps": 929.5,
+        "saturationPct": 32.62,
+        "errorBudgetRemainingPct": 92.88
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 131.03,
+        "errorRatePct": 0.46,
+        "throughputRps": 879.69,
+        "saturationPct": 34.68,
+        "errorBudgetRemainingPct": 93.38
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 139.34,
+        "errorRatePct": 0.15,
+        "throughputRps": 965.38,
+        "saturationPct": 30.76,
+        "errorBudgetRemainingPct": 92.52
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 138.75,
+        "errorRatePct": 0.11,
+        "throughputRps": 925.16,
+        "saturationPct": 36.22,
+        "errorBudgetRemainingPct": 92.84
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 120.56,
+        "errorRatePct": 0.25,
+        "throughputRps": 978.14,
+        "saturationPct": 34.45,
+        "errorBudgetRemainingPct": 93.05
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 114.88,
+        "errorRatePct": 0.2,
+        "throughputRps": 1001.77,
+        "saturationPct": 33.84,
+        "errorBudgetRemainingPct": 92.78
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 108.3,
+        "errorRatePct": 0.05,
+        "throughputRps": 1003.88,
+        "saturationPct": 35.18,
+        "errorBudgetRemainingPct": 93.15
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 108.58,
+        "errorRatePct": 0.02,
+        "throughputRps": 962.81,
+        "saturationPct": 30.04,
+        "errorBudgetRemainingPct": 92.67
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 112.25,
+        "errorRatePct": 0.09,
+        "throughputRps": 893.18,
+        "saturationPct": 36.7,
+        "errorBudgetRemainingPct": 92.64
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 117.64,
+        "errorRatePct": 0.08,
+        "throughputRps": 1013.18,
+        "saturationPct": 32.41,
+        "errorBudgetRemainingPct": 92.53
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 118.56,
+        "errorRatePct": 0.09,
+        "throughputRps": 984.75,
+        "saturationPct": 30.01,
+        "errorBudgetRemainingPct": 93.3
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 127.73,
+        "errorRatePct": 0.06,
+        "throughputRps": 867.3,
+        "saturationPct": 29.9,
+        "errorBudgetRemainingPct": 93.32
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 117.98,
+        "errorRatePct": 0.31,
+        "throughputRps": 975.92,
+        "saturationPct": 32.92,
+        "errorBudgetRemainingPct": 92.62
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 117,
+        "errorRatePct": 0.11,
+        "throughputRps": 945.79,
+        "saturationPct": 37.14,
+        "errorBudgetRemainingPct": 92.69
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 133.12,
+        "errorRatePct": 0.42,
+        "throughputRps": 942.04,
+        "saturationPct": 36.67,
+        "errorBudgetRemainingPct": 93.25
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 139.19,
+        "errorRatePct": 0.34,
+        "throughputRps": 914.93,
+        "saturationPct": 35.72,
+        "errorBudgetRemainingPct": 93.22
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 109.53,
+        "errorRatePct": 0.07,
+        "throughputRps": 923.74,
+        "saturationPct": 32.36,
+        "errorBudgetRemainingPct": 92.84
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 114.48,
+        "errorRatePct": 0.02,
+        "throughputRps": 885.19,
+        "saturationPct": 35.26,
+        "errorBudgetRemainingPct": 93.03
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 119.86,
+        "errorRatePct": 0.4,
+        "throughputRps": 876.97,
+        "saturationPct": 35.45,
+        "errorBudgetRemainingPct": 93.41
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 128.91,
+        "errorRatePct": 0.43,
+        "throughputRps": 979.15,
+        "saturationPct": 30.21,
+        "errorBudgetRemainingPct": 93.5
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 134.22,
+        "errorRatePct": 0.28,
+        "throughputRps": 908.16,
+        "saturationPct": 32.2,
+        "errorBudgetRemainingPct": 93.06
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 117.38,
+        "errorRatePct": 0.28,
+        "throughputRps": 915.1,
+        "saturationPct": 37.09,
+        "errorBudgetRemainingPct": 93.01
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 126.57,
+        "errorRatePct": 0.42,
+        "throughputRps": 945.79,
+        "saturationPct": 31.73,
+        "errorBudgetRemainingPct": 93.27
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 125.65,
+        "errorRatePct": 0.36,
+        "throughputRps": 866.77,
+        "saturationPct": 37.33,
+        "errorBudgetRemainingPct": 93.36
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 121.21,
+        "errorRatePct": 0.21,
+        "throughputRps": 979.95,
+        "saturationPct": 35.14,
+        "errorBudgetRemainingPct": 93.16
+      },
+      {
+        "service": "auth-service",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 114.47,
+        "errorRatePct": 0.24,
+        "throughputRps": 889.27,
+        "saturationPct": 35.19,
+        "errorBudgetRemainingPct": 92.82
+      }
+    ],
+    "inventory-service": [
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 152.14,
+        "errorRatePct": 0.41,
+        "throughputRps": 410.46,
+        "saturationPct": 29.46,
+        "errorBudgetRemainingPct": 91.37
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 153.91,
+        "errorRatePct": 0.1,
+        "throughputRps": 437.62,
+        "saturationPct": 31.04,
+        "errorBudgetRemainingPct": 90.71
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 150.56,
+        "errorRatePct": 0.44,
+        "throughputRps": 435.78,
+        "saturationPct": 25.53,
+        "errorBudgetRemainingPct": 90.97
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 147.26,
+        "errorRatePct": 0.41,
+        "throughputRps": 434.61,
+        "saturationPct": 28.26,
+        "errorBudgetRemainingPct": 91.04
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 160.81,
+        "errorRatePct": 0.24,
+        "throughputRps": 444.99,
+        "saturationPct": 25.86,
+        "errorBudgetRemainingPct": 91.27
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 158.25,
+        "errorRatePct": 0.48,
+        "throughputRps": 429.13,
+        "saturationPct": 30.71,
+        "errorBudgetRemainingPct": 90.88
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 157.29,
+        "errorRatePct": 0.34,
+        "throughputRps": 431.58,
+        "saturationPct": 26.35,
+        "errorBudgetRemainingPct": 90.63
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 173.85,
+        "errorRatePct": 0.36,
+        "throughputRps": 417.18,
+        "saturationPct": 32.6,
+        "errorBudgetRemainingPct": 91.26
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 156.19,
+        "errorRatePct": 0.32,
+        "throughputRps": 440.57,
+        "saturationPct": 26.48,
+        "errorBudgetRemainingPct": 91.07
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.85,
+        "latencyP95Ms": 173.4,
+        "errorRatePct": 0.39,
+        "throughputRps": 460.53,
+        "saturationPct": 31.3,
+        "errorBudgetRemainingPct": 91.27
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 172.8,
+        "errorRatePct": 0.54,
+        "throughputRps": 463.75,
+        "saturationPct": 32.1,
+        "errorBudgetRemainingPct": 90.78
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 162.19,
+        "errorRatePct": 0.2,
+        "throughputRps": 413.1,
+        "saturationPct": 30.75,
+        "errorBudgetRemainingPct": 90.63
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 146.19,
+        "errorRatePct": 0.2,
+        "throughputRps": 443.56,
+        "saturationPct": 32.89,
+        "errorBudgetRemainingPct": 91.17
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 168.76,
+        "errorRatePct": 0.38,
+        "throughputRps": 435.56,
+        "saturationPct": 27.01,
+        "errorBudgetRemainingPct": 90.76
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 164.95,
+        "errorRatePct": 0.16,
+        "throughputRps": 414.91,
+        "saturationPct": 27.08,
+        "errorBudgetRemainingPct": 90.59
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 162.77,
+        "errorRatePct": 0.45,
+        "throughputRps": 434.93,
+        "saturationPct": 32.58,
+        "errorBudgetRemainingPct": 90.6
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.98,
+        "latencyP95Ms": 148.52,
+        "errorRatePct": 0.46,
+        "throughputRps": 412.8,
+        "saturationPct": 33.4,
+        "errorBudgetRemainingPct": 91.35
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 157.86,
+        "errorRatePct": 0.34,
+        "throughputRps": 462.95,
+        "saturationPct": 31.08,
+        "errorBudgetRemainingPct": 90.54
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 152.4,
+        "errorRatePct": 0.12,
+        "throughputRps": 418.76,
+        "saturationPct": 29.66,
+        "errorBudgetRemainingPct": 91.31
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 171.01,
+        "errorRatePct": 0.39,
+        "throughputRps": 426.35,
+        "saturationPct": 32.82,
+        "errorBudgetRemainingPct": 90.52
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 174.32,
+        "errorRatePct": 0.53,
+        "throughputRps": 466.43,
+        "saturationPct": 27.49,
+        "errorBudgetRemainingPct": 90.6
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 158.03,
+        "errorRatePct": 0.34,
+        "throughputRps": 416.64,
+        "saturationPct": 27.55,
+        "errorBudgetRemainingPct": 90.62
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 151.27,
+        "errorRatePct": 0.46,
+        "throughputRps": 474.24,
+        "saturationPct": 29.35,
+        "errorBudgetRemainingPct": 90.75
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 160.56,
+        "errorRatePct": 0.08,
+        "throughputRps": 464.86,
+        "saturationPct": 26.96,
+        "errorBudgetRemainingPct": 90.69
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 150.11,
+        "errorRatePct": 0.1,
+        "throughputRps": 410.36,
+        "saturationPct": 28.05,
+        "errorBudgetRemainingPct": 90.74
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 177.43,
+        "errorRatePct": 0.17,
+        "throughputRps": 428.31,
+        "saturationPct": 25.16,
+        "errorBudgetRemainingPct": 91.02
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 174.03,
+        "errorRatePct": 0.14,
+        "throughputRps": 418.2,
+        "saturationPct": 27.71,
+        "errorBudgetRemainingPct": 91.46
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 172.91,
+        "errorRatePct": 0.27,
+        "throughputRps": 462.46,
+        "saturationPct": 26.22,
+        "errorBudgetRemainingPct": 91.01
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 158.43,
+        "errorRatePct": 0.44,
+        "throughputRps": 465.56,
+        "saturationPct": 31.46,
+        "errorBudgetRemainingPct": 91.27
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 176.47,
+        "errorRatePct": 0.1,
+        "throughputRps": 427.98,
+        "saturationPct": 29.07,
+        "errorBudgetRemainingPct": 90.82
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 170.24,
+        "errorRatePct": 0.07,
+        "throughputRps": 434.87,
+        "saturationPct": 26.86,
+        "errorBudgetRemainingPct": 91.34
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 146.68,
+        "errorRatePct": 0.13,
+        "throughputRps": 451.94,
+        "saturationPct": 27.49,
+        "errorBudgetRemainingPct": 90.9
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 162.81,
+        "errorRatePct": 0.08,
+        "throughputRps": 439.65,
+        "saturationPct": 32.95,
+        "errorBudgetRemainingPct": 90.51
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 172.83,
+        "errorRatePct": 0.38,
+        "throughputRps": 414.38,
+        "saturationPct": 27.78,
+        "errorBudgetRemainingPct": 91.24
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.92,
+        "latencyP95Ms": 171.63,
+        "errorRatePct": 0.11,
+        "throughputRps": 454.9,
+        "saturationPct": 27.2,
+        "errorBudgetRemainingPct": 90.66
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.85,
+        "latencyP95Ms": 158.37,
+        "errorRatePct": 0.43,
+        "throughputRps": 418.4,
+        "saturationPct": 32.83,
+        "errorBudgetRemainingPct": 90.71
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 153.7,
+        "errorRatePct": 0.4,
+        "throughputRps": 459.17,
+        "saturationPct": 25.09,
+        "errorBudgetRemainingPct": 90.62
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 146.4,
+        "errorRatePct": 0.2,
+        "throughputRps": 445.4,
+        "saturationPct": 29.22,
+        "errorBudgetRemainingPct": 91.23
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.97,
+        "latencyP95Ms": 156.15,
+        "errorRatePct": 0.18,
+        "throughputRps": 440.52,
+        "saturationPct": 28.68,
+        "errorBudgetRemainingPct": 91.06
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.87,
+        "latencyP95Ms": 174.55,
+        "errorRatePct": 0.44,
+        "throughputRps": 473.38,
+        "saturationPct": 29.37,
+        "errorBudgetRemainingPct": 91.43
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 147.62,
+        "errorRatePct": 0.44,
+        "throughputRps": 465.43,
+        "saturationPct": 25.41,
+        "errorBudgetRemainingPct": 91.39
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 153.19,
+        "errorRatePct": 0.28,
+        "throughputRps": 473.03,
+        "saturationPct": 25,
+        "errorBudgetRemainingPct": 91.06
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.99,
+        "latencyP95Ms": 156.65,
+        "errorRatePct": 0.37,
+        "throughputRps": 462.65,
+        "saturationPct": 32.14,
+        "errorBudgetRemainingPct": 90.84
+      },
+      {
+        "service": "inventory-service",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 146.82,
+        "errorRatePct": 0.17,
+        "throughputRps": 432.42,
+        "saturationPct": 27.23,
+        "errorBudgetRemainingPct": 91.33
+      }
+    ],
+    "billing-worker": [
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:14:50.351Z",
+        "availability": 99.84,
+        "latencyP95Ms": 252.52,
+        "errorRatePct": 0.83,
+        "throughputRps": 167,
+        "saturationPct": 58.91,
+        "errorBudgetRemainingPct": 76.08
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:15:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 244.29,
+        "errorRatePct": 0.76,
+        "throughputRps": 193.02,
+        "saturationPct": 54.46,
+        "errorBudgetRemainingPct": 75.76
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:16:50.351Z",
+        "availability": 99.9,
+        "latencyP95Ms": 231.27,
+        "errorRatePct": 0.84,
+        "throughputRps": 183.63,
+        "saturationPct": 59.01,
+        "errorBudgetRemainingPct": 76.35
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:17:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 251.08,
+        "errorRatePct": 0.62,
+        "throughputRps": 174.02,
+        "saturationPct": 55.81,
+        "errorBudgetRemainingPct": 76.05
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:18:50.351Z",
+        "availability": 99.8,
+        "latencyP95Ms": 245.6,
+        "errorRatePct": 0.9,
+        "throughputRps": 186.5,
+        "saturationPct": 56.69,
+        "errorBudgetRemainingPct": 76.19
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:19:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 236.54,
+        "errorRatePct": 0.79,
+        "throughputRps": 185.32,
+        "saturationPct": 58.67,
+        "errorBudgetRemainingPct": 76.46
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:20:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 253.58,
+        "errorRatePct": 0.5,
+        "throughputRps": 172.87,
+        "saturationPct": 52.97,
+        "errorBudgetRemainingPct": 76.5
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:21:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 251.15,
+        "errorRatePct": 0.61,
+        "throughputRps": 185.33,
+        "saturationPct": 61.31,
+        "errorBudgetRemainingPct": 75.65
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:22:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 238.49,
+        "errorRatePct": 0.74,
+        "throughputRps": 175.01,
+        "saturationPct": 55.94,
+        "errorBudgetRemainingPct": 75.53
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:23:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 226.59,
+        "errorRatePct": 0.5,
+        "throughputRps": 181.09,
+        "saturationPct": 56.98,
+        "errorBudgetRemainingPct": 76.42
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:24:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 231.27,
+        "errorRatePct": 0.74,
+        "throughputRps": 188.97,
+        "saturationPct": 57.3,
+        "errorBudgetRemainingPct": 76.11
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:25:50.351Z",
+        "availability": 99.84,
+        "latencyP95Ms": 232.18,
+        "errorRatePct": 0.59,
+        "throughputRps": 179.16,
+        "saturationPct": 58.26,
+        "errorBudgetRemainingPct": 76.22
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:26:50.351Z",
+        "availability": 99.84,
+        "latencyP95Ms": 239.08,
+        "errorRatePct": 0.64,
+        "throughputRps": 185.32,
+        "saturationPct": 61.01,
+        "errorBudgetRemainingPct": 76.33
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:27:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 253.69,
+        "errorRatePct": 0.76,
+        "throughputRps": 180.12,
+        "saturationPct": 57.93,
+        "errorBudgetRemainingPct": 75.52
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:28:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 236.22,
+        "errorRatePct": 0.94,
+        "throughputRps": 177.73,
+        "saturationPct": 60.41,
+        "errorBudgetRemainingPct": 76.01
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:29:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 254.84,
+        "errorRatePct": 0.73,
+        "throughputRps": 165.84,
+        "saturationPct": 57.05,
+        "errorBudgetRemainingPct": 76.45
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:30:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 252.61,
+        "errorRatePct": 0.68,
+        "throughputRps": 180.56,
+        "saturationPct": 59.29,
+        "errorBudgetRemainingPct": 76.28
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:31:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 254.39,
+        "errorRatePct": 0.61,
+        "throughputRps": 174.55,
+        "saturationPct": 58.85,
+        "errorBudgetRemainingPct": 76.21
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:32:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 252.32,
+        "errorRatePct": 0.87,
+        "throughputRps": 191.29,
+        "saturationPct": 58.13,
+        "errorBudgetRemainingPct": 76.1
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:33:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 227.48,
+        "errorRatePct": 0.54,
+        "throughputRps": 194.38,
+        "saturationPct": 54.59,
+        "errorBudgetRemainingPct": 75.75
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:34:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 232.81,
+        "errorRatePct": 0.53,
+        "throughputRps": 174.01,
+        "saturationPct": 60.66,
+        "errorBudgetRemainingPct": 76.29
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:35:50.351Z",
+        "availability": 99.83,
+        "latencyP95Ms": 234.11,
+        "errorRatePct": 0.8,
+        "throughputRps": 171.37,
+        "saturationPct": 56.48,
+        "errorBudgetRemainingPct": 76.23
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:36:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 242.62,
+        "errorRatePct": 0.6,
+        "throughputRps": 189.85,
+        "saturationPct": 57.53,
+        "errorBudgetRemainingPct": 76.24
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:37:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 246.15,
+        "errorRatePct": 0.65,
+        "throughputRps": 187.93,
+        "saturationPct": 55.66,
+        "errorBudgetRemainingPct": 75.98
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:38:50.351Z",
+        "availability": 99.88,
+        "latencyP95Ms": 246.98,
+        "errorRatePct": 0.48,
+        "throughputRps": 178.78,
+        "saturationPct": 61,
+        "errorBudgetRemainingPct": 76.2
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:39:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 227.36,
+        "errorRatePct": 0.74,
+        "throughputRps": 188.77,
+        "saturationPct": 60.08,
+        "errorBudgetRemainingPct": 75.61
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:40:50.351Z",
+        "availability": 99.93,
+        "latencyP95Ms": 250.96,
+        "errorRatePct": 0.48,
+        "throughputRps": 184.41,
+        "saturationPct": 57.92,
+        "errorBudgetRemainingPct": 76.39
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:41:50.351Z",
+        "availability": 99.85,
+        "latencyP95Ms": 245.9,
+        "errorRatePct": 0.75,
+        "throughputRps": 176.69,
+        "saturationPct": 53.69,
+        "errorBudgetRemainingPct": 76.09
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:42:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 247.49,
+        "errorRatePct": 0.95,
+        "throughputRps": 166.62,
+        "saturationPct": 56.03,
+        "errorBudgetRemainingPct": 76.26
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:43:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 225.62,
+        "errorRatePct": 0.71,
+        "throughputRps": 189.24,
+        "saturationPct": 53.83,
+        "errorBudgetRemainingPct": 76.15
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:44:50.351Z",
+        "availability": 99.89,
+        "latencyP95Ms": 250.78,
+        "errorRatePct": 0.5,
+        "throughputRps": 193.43,
+        "saturationPct": 53.55,
+        "errorBudgetRemainingPct": 75.58
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:45:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 249.79,
+        "errorRatePct": 0.78,
+        "throughputRps": 182.75,
+        "saturationPct": 60.76,
+        "errorBudgetRemainingPct": 76.01
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:46:50.351Z",
+        "availability": 99.96,
+        "latencyP95Ms": 253.75,
+        "errorRatePct": 0.75,
+        "throughputRps": 172.54,
+        "saturationPct": 55.25,
+        "errorBudgetRemainingPct": 75.78
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:47:50.351Z",
+        "availability": 99.82,
+        "latencyP95Ms": 252.6,
+        "errorRatePct": 0.66,
+        "throughputRps": 175.17,
+        "saturationPct": 60.35,
+        "errorBudgetRemainingPct": 76.09
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:48:50.351Z",
+        "availability": 99.91,
+        "latencyP95Ms": 245.81,
+        "errorRatePct": 0.77,
+        "throughputRps": 167.33,
+        "saturationPct": 59.59,
+        "errorBudgetRemainingPct": 75.93
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:49:50.351Z",
+        "availability": 99.8,
+        "latencyP95Ms": 244.76,
+        "errorRatePct": 0.81,
+        "throughputRps": 168.82,
+        "saturationPct": 56.94,
+        "errorBudgetRemainingPct": 75.54
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:50:50.351Z",
+        "availability": 99.95,
+        "latencyP95Ms": 246,
+        "errorRatePct": 0.62,
+        "throughputRps": 169.96,
+        "saturationPct": 53.96,
+        "errorBudgetRemainingPct": 76.5
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:51:50.351Z",
+        "availability": 99.82,
+        "latencyP95Ms": 229.9,
+        "errorRatePct": 0.68,
+        "throughputRps": 183.4,
+        "saturationPct": 54.04,
+        "errorBudgetRemainingPct": 75.65
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:52:50.351Z",
+        "availability": 99.94,
+        "latencyP95Ms": 245.22,
+        "errorRatePct": 0.52,
+        "throughputRps": 173.34,
+        "saturationPct": 57.7,
+        "errorBudgetRemainingPct": 76.24
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:53:50.351Z",
+        "availability": 99.83,
+        "latencyP95Ms": 252.23,
+        "errorRatePct": 0.62,
+        "throughputRps": 178.59,
+        "saturationPct": 56.65,
+        "errorBudgetRemainingPct": 76.4
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:54:50.351Z",
+        "availability": 99.81,
+        "latencyP95Ms": 248.92,
+        "errorRatePct": 0.52,
+        "throughputRps": 186.11,
+        "saturationPct": 54.43,
+        "errorBudgetRemainingPct": 76.17
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:55:50.351Z",
+        "availability": 99.84,
+        "latencyP95Ms": 235.39,
+        "errorRatePct": 0.66,
+        "throughputRps": 172.79,
+        "saturationPct": 61.4,
+        "errorBudgetRemainingPct": 76.29
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:56:50.351Z",
+        "availability": 99.81,
+        "latencyP95Ms": 251.44,
+        "errorRatePct": 0.52,
+        "throughputRps": 171.39,
+        "saturationPct": 59.4,
+        "errorBudgetRemainingPct": 76.46
+      },
+      {
+        "service": "billing-worker",
+        "timestamp": "2026-03-11T01:57:50.351Z",
+        "availability": 99.86,
+        "latencyP95Ms": 226.79,
+        "errorRatePct": 0.53,
+        "throughputRps": 186.62,
+        "saturationPct": 56.05,
+        "errorBudgetRemainingPct": 76.05
+      }
+    ]
+  },
+  "alerts": [],
+  "replayScenarios": [
+    {
+      "id": "checkout-lockstorm",
+      "name": "Checkout DB Lock Storm",
+      "description": "Une contention SQL dégrade checkout et payments avec propagation en cascade.",
+      "durationSec": 420,
+      "businessImpact": "Abandon de panier +17% sur mobile, conversion globale -6%.",
+      "stages": [
+        {
+          "offsetSec": 0,
+          "title": "Soft degradation",
+          "narrative": "Les writes checkout montent en file d'attente.",
+          "overrides": {
+            "checkout-api": {
+              "latencyMultiplier": 1.8,
+              "errorRateDelta": 1.2,
+              "availabilityDelta": -0.4,
+              "trafficMultiplier": 1.06,
+              "saturationDelta": 7,
+              "logTemplate": "slow query detected on order_insert"
+            }
+          }
+        },
+        {
+          "offsetSec": 120,
+          "title": "Propagation to payments",
+          "narrative": "Le service payments timeoute sur la validation de transaction.",
+          "overrides": {
+            "checkout-api": {
+              "latencyMultiplier": 3.1,
+              "errorRateDelta": 3.6,
+              "availabilityDelta": -1.6,
+              "trafficMultiplier": 0.91,
+              "saturationDelta": 21,
+              "logTemplate": "retry budget exhausted for checkout_db"
+            },
+            "payments-api": {
+              "latencyMultiplier": 2.3,
+              "errorRateDelta": 2.9,
+              "availabilityDelta": -1.2,
+              "trafficMultiplier": 0.88,
+              "saturationDelta": 17,
+              "logTemplate": "payment authorization timeout"
+            }
+          }
+        },
+        {
+          "offsetSec": 260,
+          "title": "Critical customer impact",
+          "narrative": "Le p95 checkout dépasse 1.2s, burn-rate error budget x9.",
+          "overrides": {
+            "checkout-api": {
+              "latencyMultiplier": 4.1,
+              "errorRateDelta": 5.1,
+              "availabilityDelta": -2.5,
+              "trafficMultiplier": 0.79,
+              "saturationDelta": 34,
+              "logTemplate": "database lock timeout 1200ms"
+            },
+            "payments-api": {
+              "latencyMultiplier": 3,
+              "errorRateDelta": 4.3,
+              "availabilityDelta": -1.8,
+              "trafficMultiplier": 0.81,
+              "saturationDelta": 25,
+              "logTemplate": "idempotency queue saturation"
+            },
+            "api-gateway": {
+              "latencyMultiplier": 1.7,
+              "errorRateDelta": 1.6,
+              "availabilityDelta": -0.7,
+              "trafficMultiplier": 0.86,
+              "saturationDelta": 11,
+              "logTemplate": "upstream checkout timeout"
+            }
+          }
+        },
+        {
+          "offsetSec": 350,
+          "title": "Mitigation",
+          "narrative": "Le feature flag checkout-cache est activé et la file SQL se résorbe.",
+          "overrides": {
+            "checkout-api": {
+              "latencyMultiplier": 1.5,
+              "errorRateDelta": 1,
+              "availabilityDelta": -0.2,
+              "trafficMultiplier": 0.9,
+              "saturationDelta": 6,
+              "logTemplate": "cache fallback active"
+            },
+            "payments-api": {
+              "latencyMultiplier": 1.2,
+              "errorRateDelta": 0.5,
+              "availabilityDelta": -0.1,
+              "trafficMultiplier": 0.95,
+              "saturationDelta": 2,
+              "logTemplate": "payment queue drained"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "auth-token-regression",
+      "name": "Auth Token Regression",
+      "description": "Un déploiement invalide prématurément les tokens et provoque des 401 massifs.",
+      "durationSec": 360,
+      "businessImpact": "Hausse tickets support B2B, churn risque sur comptes enterprise.",
+      "stages": [
+        {
+          "offsetSec": 0,
+          "title": "Deployment drift",
+          "narrative": "La durée de vie des JWT est incorrecte après un rollout canary.",
+          "overrides": {
+            "auth-service": {
+              "latencyMultiplier": 1.4,
+              "errorRateDelta": 1.8,
+              "availabilityDelta": -0.6,
+              "trafficMultiplier": 1.2,
+              "saturationDelta": 9,
+              "logTemplate": "token signature mismatch"
+            }
+          }
+        },
+        {
+          "offsetSec": 110,
+          "title": "Retry storm",
+          "narrative": "L'API Gateway déclenche une tempête de retries session refresh.",
+          "overrides": {
+            "auth-service": {
+              "latencyMultiplier": 2,
+              "errorRateDelta": 4,
+              "availabilityDelta": -1.7,
+              "trafficMultiplier": 1.33,
+              "saturationDelta": 19,
+              "logTemplate": "jwt verify failure burst"
+            },
+            "api-gateway": {
+              "latencyMultiplier": 1.8,
+              "errorRateDelta": 2.6,
+              "availabilityDelta": -1.2,
+              "trafficMultiplier": 1.28,
+              "saturationDelta": 13,
+              "logTemplate": "upstream auth unauthorized response"
+            }
+          }
+        },
+        {
+          "offsetSec": 230,
+          "title": "SLA breach risk",
+          "narrative": "Disponibilité gateway < 98.8%, clients premium impactés.",
+          "overrides": {
+            "auth-service": {
+              "latencyMultiplier": 2.5,
+              "errorRateDelta": 5.9,
+              "availabilityDelta": -2.2,
+              "trafficMultiplier": 1.15,
+              "saturationDelta": 27,
+              "logTemplate": "auth cache eviction storm"
+            },
+            "api-gateway": {
+              "latencyMultiplier": 2.1,
+              "errorRateDelta": 4.1,
+              "availabilityDelta": -1.9,
+              "trafficMultiplier": 1.11,
+              "saturationDelta": 20,
+              "logTemplate": "session refresh retry limit reached"
+            }
+          }
+        },
+        {
+          "offsetSec": 300,
+          "title": "Rollback",
+          "narrative": "Rollback progressif, les tokens stables reviennent.",
+          "overrides": {
+            "auth-service": {
+              "latencyMultiplier": 1.2,
+              "errorRateDelta": 0.8,
+              "availabilityDelta": -0.15,
+              "trafficMultiplier": 1.03,
+              "saturationDelta": 2,
+              "logTemplate": "token ttl reset"
+            },
+            "api-gateway": {
+              "latencyMultiplier": 1.1,
+              "errorRateDelta": 0.4,
+              "availabilityDelta": -0.08,
+              "trafficMultiplier": 1.01,
+              "saturationDelta": 1,
+              "logTemplate": "upstream auth stabilized"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
