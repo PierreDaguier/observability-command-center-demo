@@ -1,0 +1,196 @@
+[
+  {
+    "id": "checkout-lockstorm",
+    "name": "Checkout DB Lock Storm",
+    "description": "Une contention SQL dégrade checkout et payments avec propagation en cascade.",
+    "durationSec": 420,
+    "businessImpact": "Abandon de panier +17% sur mobile, conversion globale -6%.",
+    "stages": [
+      {
+        "offsetSec": 0,
+        "title": "Soft degradation",
+        "narrative": "Les writes checkout montent en file d'attente.",
+        "overrides": {
+          "checkout-api": {
+            "latencyMultiplier": 1.8,
+            "errorRateDelta": 1.2,
+            "availabilityDelta": -0.4,
+            "trafficMultiplier": 1.06,
+            "saturationDelta": 7,
+            "logTemplate": "slow query detected on order_insert"
+          }
+        }
+      },
+      {
+        "offsetSec": 120,
+        "title": "Propagation to payments",
+        "narrative": "Le service payments timeoute sur la validation de transaction.",
+        "overrides": {
+          "checkout-api": {
+            "latencyMultiplier": 3.1,
+            "errorRateDelta": 3.6,
+            "availabilityDelta": -1.6,
+            "trafficMultiplier": 0.91,
+            "saturationDelta": 21,
+            "logTemplate": "retry budget exhausted for checkout_db"
+          },
+          "payments-api": {
+            "latencyMultiplier": 2.3,
+            "errorRateDelta": 2.9,
+            "availabilityDelta": -1.2,
+            "trafficMultiplier": 0.88,
+            "saturationDelta": 17,
+            "logTemplate": "payment authorization timeout"
+          }
+        }
+      },
+      {
+        "offsetSec": 260,
+        "title": "Critical customer impact",
+        "narrative": "Le p95 checkout dépasse 1.2s, burn-rate error budget x9.",
+        "overrides": {
+          "checkout-api": {
+            "latencyMultiplier": 4.1,
+            "errorRateDelta": 5.1,
+            "availabilityDelta": -2.5,
+            "trafficMultiplier": 0.79,
+            "saturationDelta": 34,
+            "logTemplate": "database lock timeout 1200ms"
+          },
+          "payments-api": {
+            "latencyMultiplier": 3.0,
+            "errorRateDelta": 4.3,
+            "availabilityDelta": -1.8,
+            "trafficMultiplier": 0.81,
+            "saturationDelta": 25,
+            "logTemplate": "idempotency queue saturation"
+          },
+          "api-gateway": {
+            "latencyMultiplier": 1.7,
+            "errorRateDelta": 1.6,
+            "availabilityDelta": -0.7,
+            "trafficMultiplier": 0.86,
+            "saturationDelta": 11,
+            "logTemplate": "upstream checkout timeout"
+          }
+        }
+      },
+      {
+        "offsetSec": 350,
+        "title": "Mitigation",
+        "narrative": "Le feature flag checkout-cache est activé et la file SQL se résorbe.",
+        "overrides": {
+          "checkout-api": {
+            "latencyMultiplier": 1.5,
+            "errorRateDelta": 1.0,
+            "availabilityDelta": -0.2,
+            "trafficMultiplier": 0.9,
+            "saturationDelta": 6,
+            "logTemplate": "cache fallback active"
+          },
+          "payments-api": {
+            "latencyMultiplier": 1.2,
+            "errorRateDelta": 0.5,
+            "availabilityDelta": -0.1,
+            "trafficMultiplier": 0.95,
+            "saturationDelta": 2,
+            "logTemplate": "payment queue drained"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "auth-token-regression",
+    "name": "Auth Token Regression",
+    "description": "Un déploiement invalide prématurément les tokens et provoque des 401 massifs.",
+    "durationSec": 360,
+    "businessImpact": "Hausse tickets support B2B, churn risque sur comptes enterprise.",
+    "stages": [
+      {
+        "offsetSec": 0,
+        "title": "Deployment drift",
+        "narrative": "La durée de vie des JWT est incorrecte après un rollout canary.",
+        "overrides": {
+          "auth-service": {
+            "latencyMultiplier": 1.4,
+            "errorRateDelta": 1.8,
+            "availabilityDelta": -0.6,
+            "trafficMultiplier": 1.2,
+            "saturationDelta": 9,
+            "logTemplate": "token signature mismatch"
+          }
+        }
+      },
+      {
+        "offsetSec": 110,
+        "title": "Retry storm",
+        "narrative": "L'API Gateway déclenche une tempête de retries session refresh.",
+        "overrides": {
+          "auth-service": {
+            "latencyMultiplier": 2.0,
+            "errorRateDelta": 4.0,
+            "availabilityDelta": -1.7,
+            "trafficMultiplier": 1.33,
+            "saturationDelta": 19,
+            "logTemplate": "jwt verify failure burst"
+          },
+          "api-gateway": {
+            "latencyMultiplier": 1.8,
+            "errorRateDelta": 2.6,
+            "availabilityDelta": -1.2,
+            "trafficMultiplier": 1.28,
+            "saturationDelta": 13,
+            "logTemplate": "upstream auth unauthorized response"
+          }
+        }
+      },
+      {
+        "offsetSec": 230,
+        "title": "SLA breach risk",
+        "narrative": "Disponibilité gateway < 98.8%, clients premium impactés.",
+        "overrides": {
+          "auth-service": {
+            "latencyMultiplier": 2.5,
+            "errorRateDelta": 5.9,
+            "availabilityDelta": -2.2,
+            "trafficMultiplier": 1.15,
+            "saturationDelta": 27,
+            "logTemplate": "auth cache eviction storm"
+          },
+          "api-gateway": {
+            "latencyMultiplier": 2.1,
+            "errorRateDelta": 4.1,
+            "availabilityDelta": -1.9,
+            "trafficMultiplier": 1.11,
+            "saturationDelta": 20,
+            "logTemplate": "session refresh retry limit reached"
+          }
+        }
+      },
+      {
+        "offsetSec": 300,
+        "title": "Rollback",
+        "narrative": "Rollback progressif, les tokens stables reviennent.",
+        "overrides": {
+          "auth-service": {
+            "latencyMultiplier": 1.2,
+            "errorRateDelta": 0.8,
+            "availabilityDelta": -0.15,
+            "trafficMultiplier": 1.03,
+            "saturationDelta": 2,
+            "logTemplate": "token ttl reset"
+          },
+          "api-gateway": {
+            "latencyMultiplier": 1.1,
+            "errorRateDelta": 0.4,
+            "availabilityDelta": -0.08,
+            "trafficMultiplier": 1.01,
+            "saturationDelta": 1,
+            "logTemplate": "upstream auth stabilized"
+          }
+        }
+      }
+    ]
+  }
+]
