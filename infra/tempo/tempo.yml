@@ -1,0 +1,25 @@
+server:
+  http_listen_port: 3200
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+storage:
+  trace:
+    backend: local
+    local:
+      path: /tmp/tempo/traces
+
+compactor:
+  compaction:
+    block_retention: 24h
+
+overrides:
+  defaults:
+    ingestion:
+      rate_limit_bytes: 15000000
