@@ -1,0 +1,68 @@
+[
+  {
+    "id": "api-gateway",
+    "domain": "Edge",
+    "tier": "critical",
+    "latencyP95Ms": 142,
+    "availability": 99.94,
+    "errorRatePct": 0.38,
+    "throughputRps": 1480,
+    "saturationPct": 42,
+    "errorBudgetRemainingPct": 88
+  },
+  {
+    "id": "checkout-api",
+    "domain": "Commerce",
+    "tier": "critical",
+    "latencyP95Ms": 210,
+    "availability": 99.91,
+    "errorRatePct": 0.62,
+    "throughputRps": 780,
+    "saturationPct": 48,
+    "errorBudgetRemainingPct": 84
+  },
+  {
+    "id": "payments-api",
+    "domain": "Commerce",
+    "tier": "critical",
+    "latencyP95Ms": 186,
+    "availability": 99.96,
+    "errorRatePct": 0.44,
+    "throughputRps": 520,
+    "saturationPct": 37,
+    "errorBudgetRemainingPct": 90
+  },
+  {
+    "id": "auth-service",
+    "domain": "Platform",
+    "tier": "critical",
+    "latencyP95Ms": 124,
+    "availability": 99.98,
+    "errorRatePct": 0.21,
+    "throughputRps": 940,
+    "saturationPct": 34,
+    "errorBudgetRemainingPct": 93
+  },
+  {
+    "id": "inventory-service",
+    "domain": "Commerce",
+    "tier": "high",
+    "latencyP95Ms": 162,
+    "availability": 99.93,
+    "errorRatePct": 0.31,
+    "throughputRps": 440,
+    "saturationPct": 29,
+    "errorBudgetRemainingPct": 91
+  },
+  {
+    "id": "billing-worker",
+    "domain": "Finance",
+    "tier": "high",
+    "latencyP95Ms": 240,
+    "availability": 99.88,
+    "errorRatePct": 0.72,
+    "throughputRps": 180,
+    "saturationPct": 57,
+    "errorBudgetRemainingPct": 76
+  }
+]
