@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="680" viewBox="0 0 1220 680">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="100%" stop-color="#122537"/>
+    </linearGradient>
+    <style>
+      .node{fill:#0d1b27;stroke:#7bb2ff;stroke-width:1.2;rx:12}
+      .text{font:600 15px Sora, Arial;fill:#eaf4ff}
+      .small{font:500 12px 'IBM Plex Mono', monospace;fill:#9fb6cc}
+      .arrow{stroke:#8fc8ff;stroke-width:2;fill:none;marker-end:url(#m)}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#8fc8ff"/>
+    </marker>
+  </defs>
+  <rect width="1220" height="680" fill="url(#bg)"/>
+
+  <rect class="node" x="60" y="120" width="220" height="90"/>
+  <text class="text" x="82" y="156">Client Browser</text>
+  <text class="small" x="82" y="178">Desktop + Mobile UI</text>
+
+  <rect class="node" x="360" y="85" width="240" height="110"/>
+  <text class="text" x="385" y="125">Web App</text>
+  <text class="small" x="385" y="147">React + Vite</text>
+
+  <rect class="node" x="360" y="250" width="240" height="130"/>
+  <text class="text" x="385" y="292">API Aggregator</text>
+  <text class="small" x="385" y="314">Fastify + Correlation Engine</text>
+
+  <rect class="node" x="700" y="85" width="250" height="120"/>
+  <text class="text" x="725" y="128">Telemetry Simulator</text>
+  <text class="small" x="725" y="150">OTel traces + metrics + logs</text>
+
+  <rect class="node" x="700" y="255" width="250" height="110"/>
+  <text class="text" x="725" y="294">OTel Collector</text>
+  <text class="small" x="725" y="316">OTLP ingress + fanout</text>
+
+  <rect class="node" x="1020" y="80" width="150" height="70"/>
+  <text class="text" x="1048" y="122">Tempo</text>
+
+  <rect class="node" x="1020" y="180" width="150" height="70"/>
+  <text class="text" x="1040" y="222">Prometheus</text>
+
+  <rect class="node" x="1020" y="280" width="150" height="70"/>
+  <text class="text" x="1060" y="322">Loki</text>
+
+  <rect class="node" x="1020" y="385" width="150" height="70"/>
+  <text class="text" x="1048" y="427">Grafana</text>
+
+  <path class="arrow" d="M280 165 L360 140"/>
+  <path class="arrow" d="M480 195 L480 250"/>
+  <path class="arrow" d="M600 300 L700 300"/>
+  <path class="arrow" d="M820 205 L820 255"/>
+  <path class="arrow" d="M950 292 L1020 115"/>
+  <path class="arrow" d="M950 302 L1020 215"/>
+  <path class="arrow" d="M950 320 L1020 315"/>
+  <path class="arrow" d="M1095 250 L1095 385"/>
+  <path class="arrow" d="M1095 350 L1095 385"/>
+  <path class="arrow" d="M1095 150 L1095 385"/>
+
+  <text class="small" x="60" y="620">Architecture updated for v1.0.0 demo narrative (March 2026)</text>
+</svg>
