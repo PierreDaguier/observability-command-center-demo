@@ -49,9 +49,41 @@ Kanban columns:
 - Done
 
 Milestones:
-- Core telemetry
-- Incident intelligence
-- UX polish + launch assets
+- MVP
+- Reliability
+- UX Polish
+- v1.0.0
+
+Labels taxonomy:
+- `type/feature`
+- `type/bug`
+- `type/chore`
+- `type/docs`
+- `priority/p0`
+- `priority/p1`
+- `priority/p2`
+- `priority/p3`
+- `area/frontend`
+- `area/backend`
+- `area/observability`
+- `area/devops`
+- `area/docs`
+- `area/governance`
+
+## Branch Protection Baseline (Verified 2026-03-11)
+- Branch: `main`
+- Required check: `build-test`
+- Required approvals: `1`
+- `enforce_admins`: `true`
+- `required_linear_history`: `true`
+
+## Release Workflow Baseline (Verified 2026-03-11)
+- Workflow file: `.github/workflows/release.yml`
+- Trigger: `on.push.tags: [\"v*\"]`
+- Release tag policy:
+  - `v0.1.0`: telemetry simulation + base UI
+  - `v0.6.0`: alerts + correlation
+  - `v1.0.0`: polished narrative + docs + stable demo
 
 ## Credibility Assets (mandatory in PR)
 - Desktop screenshot
