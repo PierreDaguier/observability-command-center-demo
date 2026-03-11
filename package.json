@@ -1,0 +1,30 @@
+{
+  "name": "observability-command-center-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Observability Command Center demo platform",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n API,SIM,WEB -c cyan,magenta,green \"npm run dev -w @occ/api\" \"npm run dev -w @occ/simulator\" \"npm run dev -w @occ/web\"",
+    "build": "npm run build -w @occ/api && npm run build -w @occ/simulator && npm run build -w @occ/web",
+    "lint": "npm run lint -w @occ/api && npm run lint -w @occ/simulator && npm run lint -w @occ/web",
+    "test": "npm run test --workspaces --if-present",
+    "test:coverage": "npm run test:coverage --workspaces --if-present",
+    "seed": "npm run seed -w @occ/api",
+    "demo:replay:checkout": "curl -s -X POST http://localhost:8080/api/replay/start -H 'Content-Type: application/json' -d '{\"scenarioId\":\"checkout-lockstorm\"}' | jq .",
+    "demo:replay:auth": "curl -s -X POST http://localhost:8080/api/replay/start -H 'Content-Type: application/json' -d '{\"scenarioId\":\"auth-token-regression\"}' | jq .",
+    "demo:replay:stop": "curl -s -X POST http://localhost:8080/api/replay/stop | jq .",
+    "compose:up": "docker compose up --build -d",
+    "compose:down": "docker compose down -v",
+    "compose:logs": "docker compose logs -f --tail=200"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
