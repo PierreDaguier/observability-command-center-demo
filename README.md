@@ -1,8 +1,8 @@
 # Observability Command Center Demo
 
-[![CI](https://github.com/OWNER/observability-command-center-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/observability-command-center-demo/actions/workflows/ci.yml)
+[![CI](https://github.com/PierreDaguier/observability-command-center-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/PierreDaguier/observability-command-center-demo/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/coverage-vitest%20enabled-2ea043)](#quality)
-[![Release](https://img.shields.io/github/v/release/OWNER/observability-command-center-demo)](https://github.com/OWNER/observability-command-center-demo/releases)
+[![Release](https://img.shields.io/github/v/release/PierreDaguier/observability-command-center-demo)](https://github.com/PierreDaguier/observability-command-center-demo/releases)
 
 Premium demo platform for client-facing observability storytelling, combining:
 - Synthetic telemetry ingestion for realistic e-commerce/SaaS services
@@ -103,6 +103,5 @@ See:
 - SVG export: `docs/architecture/command-center-architecture.svg`
 
 ## Notes
-- Replace `OWNER` in badges with your GitHub org/user.
 - For branch protection and milestones setup, run:
   - `scripts/setup-github-governance.sh <owner/repo>`
