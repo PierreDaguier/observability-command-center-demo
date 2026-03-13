@@ -18,6 +18,10 @@ Premium demo platform for client-facing observability storytelling, combining:
 - Observability stack: OTel Collector + Prometheus + Grafana + Loki + Tempo
 - Packaging: Docker Compose
 
+## Visual Preview
+
+![Observability Command Center Architecture](docs/architecture/command-center-architecture.svg)
+
 ## Quick Start
 
 ### Local dev
