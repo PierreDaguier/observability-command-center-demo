@@ -21,6 +21,7 @@ Premium demo platform for client-facing observability storytelling, combining:
 ## Visual Preview
 
 ![Observability Command Center Architecture](docs/architecture/command-center-architecture.svg)
+![Observability Command Center Demo](docs/media/demo-preview.gif)
 
 ## Quick Start
 
